@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Generator</title>
+</head>
+
+<body>
+    <label for="acct-num">Account Number</label>
+    <input type="text" name="acct-num" id="acct-num"></input>
+    <a href="https://www.google.com/search?q=dog" target="_blank" rel="noopener noreferrer" id="link-btn">Link</a>
+    <script>
+        document.getElementById("link-btn").addEventListener("click", function () {
+            let acctNum = document.getElementById("acct-num").value
+            console.log(acctNum)
+            document.getElementById("link-btn").href = `https://www.google.com/search?q=${acctNum}`
+        })
+    </script>
+</body>
+
+</html>
