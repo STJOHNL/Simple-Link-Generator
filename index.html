@@ -11,12 +11,11 @@
 <body>
     <label for="acct-num">Account Number</label>
     <input type="text" name="acct-num" id="acct-num"></input>
-    <a href="https://www.google.com/search?q=dog" target="_blank" rel="noopener noreferrer" id="link-btn">Link</a>
+    <a href="#" target="_blank" rel="noopener noreferrer" id="link-btn">Link</a>
     <script>
         document.getElementById("link-btn").addEventListener("click", function () {
             let acctNum = document.getElementById("acct-num").value
-            console.log(acctNum)
-            document.getElementById("link-btn").href = `https://www.google.com/search?q=${acctNum}`
+            document.getElementById("link-btn").href = `https://apps.vtinfo.com/retailer-portal/88810/retailer/${acctNum}/search?itemCode=13572&itemCode=45262&itemCode=46070&itemCode=46677&itemCode=49153`
         })
     </script>
 </body>
