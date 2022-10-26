@@ -5,13 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
     <title>Link Generator</title>
+    <style>
+        * {
+            text-align: center;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        #link-btn {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #6EC1E4;
+            padding: 8px 20px;
+            margin: 5px;
+        }
+
+        #link-btn:hover {
+            background-color: #000000;
+            color: #6EC1E4;
+        }
+    </style>
 </head>
 
 <body>
     <label for="acct-num">Account Number</label>
     <input type="text" name="acct-num" id="acct-num"></input>
-    <a href="#" target="_blank" rel="noopener noreferrer" id="link-btn">Link</a>
+    <a href="#" target="_blank" rel="noopener noreferrer" id="link-btn">Buy Now</a>
     <script>
         document.getElementById("link-btn").addEventListener("click", function () {
             let acctNum = document.getElementById("acct-num").value
